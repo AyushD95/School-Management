@@ -10,7 +10,7 @@ app.use(cors({ origin: '*' }));
 
 
 app.use(express.json());
-
+app.get('/',(req,res)=>res.send("Site is live"))
 app.use('/schoolAPI',schoolRouter);
 
 app.listen(port, () => console.log(`Server running on port ${port}`));
