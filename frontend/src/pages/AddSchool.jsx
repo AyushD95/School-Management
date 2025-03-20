@@ -25,7 +25,7 @@ const AddSchool = () => {
       }
   
       try {
-        const response = await axios.post("http://localhost:5000/schoolAPI/addSchool", {
+        const response = await axios.post("https://school-management-3z98.onrender.com/schoolAPI/addSchool", {
           name,
           address,
           latitude: parseFloat(latitude),

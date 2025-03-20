@@ -19,7 +19,7 @@ const ListSchools = () => {
   
     try {
       // Send request to backend API
-      const response = await axios.get("http://localhost:5000/schoolAPI/listSchools", {
+      const response = await axios.get("https://school-management-3z98.onrender.com/schoolAPI/listSchools", {
         params: { latitude, longitude },
       });
   
